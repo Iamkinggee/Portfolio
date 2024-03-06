@@ -33,7 +33,7 @@ const Porfolioproject = () => {
     <div className='mt-4 text-center md:text-start justify-center items-center'>
 
     
-     <Link to={'https://github.com/Iamkinggee/Coinducko.git'} target='_blank' rel='noopener noreferrer' >
+     <Link to={'https://github.com/Iamkinggee/Portfolio.git'} target='_blank' rel='noopener noreferrer' >
      <button className='rounded hover:scale-105 duration-300 shadow-lg  p-3 font-[LexendZetta] font-semibold w-[300px] bg-blue-600 text-white md:text-[14px] text-[11px]'>View Code</button>            
      </Link>
      
