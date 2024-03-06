@@ -27,15 +27,19 @@ const ProjectCard = (props) => {
 
 
     <div className='mt-4 text-center md:text-start justify-center items-center'>
-     <Link to={props.url} target='_blank' rel='noopener noreferrer'>
-     <button className='rounded hover:scale-105 duration-300 shadow-lg  p-3 font-[LexendZetta] font-semibold w-[300px] bg-blue-600 text-white md:text-[14px] text-[11px]'>{props.discover}</button>            
+
+    
+     <Link to={props.visitsitelink} target='_blank' rel='noopener noreferrer' >
+     <button className='rounded hover:scale-105 duration-300 shadow-lg  p-3 font-[LexendZetta] font-semibold w-[300px] bg-blue-600 text-white md:text-[14px] text-[11px]'>{props.visitsitebutton}</button>            
      </Link>
+     
 
-
-   
-     <Link to={props.viewcode} target='_blank' rel='noopener noreferrer'>
-     <button className='rounded border-2 hover:scale-105 duration-300 shadow-lg border-blue-600 p-3 mt-3 font-bold w-[300px] font-[LexendZetta] text-white md:text-[14px] text-[11px]' id='text-black'>{props.viewcodebutton}</button>
+{/* target='_blank' rel='noopener noreferrer' */}
+     
+     <Link to={props.viewcodelink} target='_blank' rel='noopener noreferrer'  >
+     <button  className='rounded border-2 hover:scale-105 duration-300 shadow-lg border-blue-600 p-3 mt-3 font-bold w-[300px] font-[LexendZetta] text-white md:text-[14px] text-[11px]' id='text-black'>{props.viewcodebutton}</button>
      </Link> 
+     
 </div>
 
    
