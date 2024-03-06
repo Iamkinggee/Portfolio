@@ -1,5 +1,5 @@
 import React from 'react'
-import Slide from 'react-reveal/Slide';
+import { Fade,Slide } from "react-awesome-reveal";
 import MyPhoto3 from '../../assets/MyPhoto3.png'
 import {Link as ScrollLink, animateScroll as scroll} from 'react-scroll'
 
@@ -15,12 +15,12 @@ const About = () => {
         <div className='grid md:grid-cols-2 max-w-[1000px]  items-center justify-center  mx-auto '>
 
          <div className='mx-auto text-white'>
-        <Slide left>
+        <Slide direction='left'> 
          <img src={MyPhoto3} alt="photo of Godsent" className='w-[400px] ' loading='lazy'/>
          </Slide>
          </div>
          <div className='  pb-[100px] font-mono'>
-        <Slide right>
+        <Slide direction='right'>
        
          <h1 className='text-[40px] sm:text-center md:text-[50px]  font-bold text-center md:text-start text-neutral-500 font-[LexendZetta]' id='text-title'>AboutMe</h1>
        

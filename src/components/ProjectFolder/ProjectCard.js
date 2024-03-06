@@ -1,5 +1,5 @@
 import React from 'react'
-import Slide from 'react-reveal/Slide';
+import { Slide } from "react-awesome-reveal";
 import { Link } from 'react-router-dom';
 
 const ProjectCard = (props) => {
@@ -9,14 +9,14 @@ const ProjectCard = (props) => {
 
 <div className='w-full m-auto  pt-5  md:pr-10  '>
 
-<Slide left>
+<Slide direction='left'>
 {props.image}
 </Slide>
 
 </div>
 <div className='   first-line: p-5 justify-center items-center m-auto shadow-md bg-opacity-100 rounded '>
 
-<Slide right>
+<Slide direction='right'>
    <h1 className=' text-xl md:text-4xl font-[LexendZetta] font-semibold  text-center md:text-start justify-center items-center   text-white' id='text-black' >{props.title}</h1>
    <div className='text-center md:text-start'>
    <p className='md:text-[18px] text-[13px]  font-semibold text-white font-[poppins]'>{props.subtext}</p>
@@ -34,7 +34,6 @@ const ProjectCard = (props) => {
      </Link>
      
 
-{/* target='_blank' rel='noopener noreferrer' */}
      
      <Link to={props.viewcodelink} target='_blank' rel='noopener noreferrer'  >
      <button  className='rounded border-2 hover:scale-105 duration-300 shadow-lg border-blue-600 p-3 mt-3 font-bold w-[300px] font-[LexendZetta] text-white md:text-[14px] text-[11px]' id='text-black'>{props.viewcodebutton}</button>

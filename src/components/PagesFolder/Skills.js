@@ -1,6 +1,7 @@
 import React from 'react'
 import G2 from '../../assets/G2.gif'
-import Slide from 'react-reveal/Slide';
+import { Slide } from "react-awesome-reveal";
+
 
 
 
@@ -11,11 +12,12 @@ const Skills = () => {
         <div className='grid md:grid-cols-2  max-w-[1000px] items-center justify-center  h-full m-auto' >
 
          <div className='m-auto'>
-            <Slide left>
-              <img src={G2}  alt="pc-two gif" className='w-[300px] md:w-full md:pt-20 pt-0 ' /></Slide> 
+            <Slide direction='left'>
+              <img src={G2}  alt="pc-two gif" className='w-[300px] md:w-full md:pt-20 pt-0 ' />
+              </Slide> 
          </div>
          <div className=' ' >
-            <Slide right>
+            <Slide direction='right'>
          <h1 className='  text-neutral-500 
          
          text-[30px] sm:text-center md:text-[50px]  font-bold text-center md:text-start font-[LexendZetta] 
@@ -26,7 +28,7 @@ const Skills = () => {
             </Slide>
         <div className='flex  pt-10 gap-10 pb-5 font-[LexendZetta]  font-light  text-blue-500 text-[15px] ' id='text-blue' >
             <div >
-            <Slide right>
+            <Slide direction='right'>
                 <li>HTML</li>    
                 <li>CSS</li>
                 <li>Javascript</li>
@@ -39,7 +41,8 @@ const Skills = () => {
                 <li>Wordpress</li>
                 <li>BootStrap</li>
                 <li>Adobe Photoshop</li>
-                <li>Adobe Illustrator</li> </Slide>       
+                <li>Adobe Illustrator</li> 
+                </Slide>       
             </div>
         </div>
                 

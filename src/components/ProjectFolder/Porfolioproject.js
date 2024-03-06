@@ -1,5 +1,5 @@
 import React from 'react'
-import Slide from 'react-reveal/Slide';
+import { Slide } from "react-awesome-reveal";
 import { Link } from 'react-router-dom';
 import PortfolioVideo from '../../assets/PortfolioVideo.mp4'
 
@@ -11,16 +11,16 @@ const Porfolioproject = () => {
 
 <div className='w-full m-auto  pt-5  md:pr-10  '>
 
-<Slide left>
+<Slide direction='left'>
 
-    <video autoPlay loop muted loading='lazy' alt="/"  src={PortfolioVideo}/>
+    <video autoPlay loop muted loading='lazy' alt="/"  src={PortfolioVideo} className='object-contain h-[250px]  m-auto w-[300px] md:h-[350px] md:w-[500px]'/>
 
 </Slide>
 
 </div>
 <div className='   first-line: p-5 justify-center items-center m-auto shadow-md bg-opacity-100 rounded '>
 
-<Slide right>
+<Slide direction='right'>
    <h1 className=' text-xl md:text-4xl font-[LexendZetta] font-semibold  text-center md:text-start justify-center items-center   text-white' id='text-black' >Porfolio Website</h1>
    <div className='text-center md:text-start'>
   

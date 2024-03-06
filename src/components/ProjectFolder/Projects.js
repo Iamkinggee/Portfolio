@@ -24,9 +24,9 @@ const Projects = () => {
  {/* <ProjectCard title='Portfolio Website' techtools='Javascript, Tailwind CSS, React.js' discription='This is my Portfolio Website ' viewcodebutton='View code' viewcodelink={'https://github.com/Iamkinggee/Coinducko.git'}  image={<video  autoPlay loop muted loading='lazy' src={PortfolioVideo} alt="/" className='object-contain h-[200px]  m-auto w-[300px] md:h-[350px] md:w-[500px] ' />}/> */}
 
 
-<>
-<Porfolioproject/>
-</>
+<div >
+<Porfolioproject />
+</div>
     
 
     <ProjectCard title='CoinDucko' techtools='Coingecko API, Javascript, Tailwind CSS, React.js' discription='CoinDucko is a digital platform - built with the CoinGecko API; provides real-time data on various cryptocurrencies, including their current price, market cap and trading volume. Users can easily search for specific coins and view detailed information about them. The sleek and intuitive design makes it easy for users to stay updated on the latest crypto trends and make informed decisions. ' visitsitebutton='Visit Site' viewcodebutton='View Code'  image={<video  autoPlay loop muted loading='lazy' src={CoinDuckoVideo} alt="/" className='object-contain h-[250px]  m-auto w-[300px] md:h-[350px] md:w-[500px] bg-transparent' />} visitsitelink={'https://coin-ducko.vercel.app/'} viewcodelink={'https://github.com/Iamkinggee/Coinducko.git'} />

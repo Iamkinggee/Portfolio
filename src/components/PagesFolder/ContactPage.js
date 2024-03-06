@@ -1,6 +1,6 @@
 
 import React from 'react'
-import Slide from 'react-reveal/Slide';
+import { Fade,Slide } from "react-awesome-reveal";
 import Footer from '../Footer';
 import {FaLinkedin,FaEnvelope,FaWhatsapp} from 'react-icons/fa'
 import Form from '../Form'
@@ -30,7 +30,7 @@ const ContactPage = () => {
          <div className='grid md:grid-cols-2 w-full  items-center justify-center   '>
 
 <div className=' md:w-full'>
-<Slide left>
+<Slide direction='left'>
  <Form/>
 </Slide>
 </div>
@@ -41,7 +41,7 @@ const ContactPage = () => {
 
 
 <div className='   pb-5 font-[LexendZetta] font-semibold text-[15px] text-white ' >
- <Slide right>
+ <Slide direction='right'>
 <p className='md:text-[16px] text-[12px] font-light font-[LexendZetta] text-center text-blue-500'><span  className='text-white ' id='text-blue'>EMAIL: 
 <br />
 </span> iamgodsentt@gmail.com</p>
