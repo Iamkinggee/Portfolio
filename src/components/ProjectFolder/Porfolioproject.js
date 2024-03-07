@@ -1,7 +1,8 @@
 import React from 'react'
-import { Slide } from "react-awesome-reveal";
+import { Fade  } from "react-awesome-reveal";
 import { Link } from 'react-router-dom';
-import PortfolioVideo from '../../assets/PortfolioVideo.mp4'
+import PortfolioImage from '../../assets/PortfolioImage.png'
+// import PortfolioVideo from '../../assets/PortfolioVideo.mp4'
 
 
 const Porfolioproject = () => {
@@ -11,16 +12,18 @@ const Porfolioproject = () => {
 
 <div className='w-full m-auto  pt-5  md:pr-10  '>
 
-<Slide direction='left'>
+<Fade cascade damping={0.1} fraction={0.5} >
+{/* 
+    <video autoPlay loop muted loading='lazy' alt="/"  src={PortfolioVideo} className='object-contain h-[250px]  m-auto w-[300px] md:h-[350px] md:w-[500px]'/> */}
 
-    <video autoPlay loop muted loading='lazy' alt="/"  src={PortfolioVideo} className='object-contain h-[250px]  m-auto w-[300px] md:h-[350px] md:w-[500px]'/>
+    <img  loading='lazy' alt="/"  src={PortfolioImage} className='object-contain h-[250px]  m-auto w-[300px] md:h-[350px] md:w-[500px]'/>
 
-</Slide>
+</Fade >
 
 </div>
 <div className='   first-line: p-5 justify-center items-center m-auto shadow-md bg-opacity-100 rounded '>
 
-<Slide direction='right'>
+<Fade  cascade damping={0.1} fraction={0.5}>
    <h1 className=' text-xl md:text-4xl font-[LexendZetta] font-semibold  text-center md:text-start justify-center items-center   text-white' id='text-black' >Porfolio Website</h1>
    <div className='text-center md:text-start'>
   
@@ -41,7 +44,7 @@ const Porfolioproject = () => {
 </div>
 
    
-   </Slide>
+   </Fade >
 </div>
 
 

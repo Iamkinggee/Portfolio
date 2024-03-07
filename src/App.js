@@ -16,11 +16,11 @@ const App = () => {
     <div>
     <Logo/>
     <HomePage/>
-     <About />
-    <Skills/>
+   <About />   
+   <Skills/>
     <Projects/>
-    <ContactPage/> 
-    <NavBar/> 
+    <ContactPage/>  
+    <NavBar/>   
     </div> 
 
 

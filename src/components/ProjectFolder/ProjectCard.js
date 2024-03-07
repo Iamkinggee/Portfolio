@@ -1,5 +1,5 @@
 import React from 'react'
-import { Slide } from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
 import { Link } from 'react-router-dom';
 
 const ProjectCard = (props) => {
@@ -9,14 +9,14 @@ const ProjectCard = (props) => {
 
 <div className='w-full m-auto  pt-5  md:pr-10  '>
 
-<Slide direction='left'>
+<Fade cascade damping={0.1} fraction={0.5}>
 {props.image}
-</Slide>
+</Fade>
 
 </div>
 <div className='   first-line: p-5 justify-center items-center m-auto shadow-md bg-opacity-100 rounded '>
 
-<Slide direction='right'>
+<Fade cascade damping={0.1} fraction={0.5}>
    <h1 className=' text-xl md:text-4xl font-[LexendZetta] font-semibold  text-center md:text-start justify-center items-center   text-white' id='text-black' >{props.title}</h1>
    <div className='text-center md:text-start'>
    <p className='md:text-[18px] text-[13px]  font-semibold text-white font-[poppins]'>{props.subtext}</p>
@@ -42,7 +42,7 @@ const ProjectCard = (props) => {
 </div>
 
    
-   </Slide>
+   </Fade>
 </div>
 
 

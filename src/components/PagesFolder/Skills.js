@@ -1,6 +1,6 @@
 import React from 'react'
 import G2 from '../../assets/G2.gif'
-import { Slide } from "react-awesome-reveal";
+import { Fade  } from "react-awesome-reveal";
 
 
 
@@ -12,12 +12,12 @@ const Skills = () => {
         <div className='grid md:grid-cols-2  max-w-[1000px] items-center justify-center  h-full m-auto' >
 
          <div className='m-auto'>
-            <Slide direction='left'>
+            <Fade cascade damping={0.1} >
               <img src={G2}  alt="pc-two gif" className='w-[300px] md:w-full md:pt-20 pt-0 ' />
-              </Slide> 
+              </Fade > 
          </div>
          <div className=' ' >
-            <Slide direction='right'>
+            <Fade  cascade damping={0.1}>
          <h1 className='  text-neutral-500 
          
          text-[30px] sm:text-center md:text-[50px]  font-bold text-center md:text-start font-[LexendZetta] 
@@ -25,10 +25,10 @@ const Skills = () => {
          ' id='text-title'>TechStack</h1>
      
             <p className='pb-5 py-2 text-start  text-white font-[LexendZetta] md:text-[15px] text-[10px]'>I'm Proficient in but, <br /> not limited to these   Technologies.</p>
-            </Slide>
+            </Fade >
         <div className='flex  pt-10 gap-10 pb-5 font-[LexendZetta]  font-light  text-blue-500 text-[15px] ' id='text-blue' >
             <div >
-            <Slide direction='right'>
+            <Fade  cascade damping={0.1 } fraction={0.5}>
                 <li>HTML</li>    
                 <li>CSS</li>
                 <li>Javascript</li>
@@ -42,7 +42,7 @@ const Skills = () => {
                 <li>BootStrap</li>
                 <li>Adobe Photoshop</li>
                 <li>Adobe Illustrator</li> 
-                </Slide>       
+                </Fade >       
             </div>
         </div>
                 
@@ -142,7 +142,7 @@ export default Skills
 //     <section className="skills">
 //       <h2 className="invisible">Skills</h2>
 //       <div className="skills__col">
-//         <p className="skills__subtitle slide-down" ref={textRef}>
+//         <p className="skills__subtitle Fade -down" ref={textRef}>
 //           Skills can be&nbsp;taught, personality is&nbsp;inherent. I&nbsp;prefer
 //           to&nbsp;keep learning, continue challenging myself, and
 //           do&nbsp;interesting things that matter.
@@ -151,7 +151,7 @@ export default Skills
 //           {courses.map(({name, cert, company}, index) => (
 //             <li
 //               key={name}
-//               className={`slide-right`}
+//               className={`Fade -right`}
 //               ref={(course) => (coursesRef.current[index] = course)}>
 //               <p
 //                 className="skills__name"
@@ -175,7 +175,7 @@ export default Skills
 //         <ul className="skills__list">
 //           {skills.map((item, index) => (
 //             <li
-//               className={`slide-right`}
+//               className={`Fade -right`}
 //               ref={(skill) => (skillsRef.current[index] = skill)}
 //               key={item}>
 //               {item}

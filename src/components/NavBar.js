@@ -10,8 +10,8 @@ import {Link as ScrollLink} from 'react-scroll'
 const NavBar = () => {
   return (
 
-<div className='fixed bottom-3 w-full    text-[2px]  z-100 p-3  font-semibold'>
-<div className='rounded max-w-[1000px]  flex justify-between items-center m-auto   border-gray-200 dark:bg-gray-700 dark:border-gray-600 opacity-95 bg-slate-800'> 
+<div className='fixed bottom-0 w-full overflow-visible   text-[2px] p-3   -z-100 font-semibold'>
+<div className='rounded max-w-[1000px]  flex justify-between items-center m-auto   border-gray-200 dark:bg-gray-700 dark:border-gray-600 opacity-90 bg-slate-800'> 
     <div className="grid h-full grid-cols-5   p-2 px-5 m-auto ">
 
 

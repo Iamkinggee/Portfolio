@@ -1,5 +1,5 @@
 import React from 'react'
-import { Fade,Slide } from "react-awesome-reveal";
+import { Fade} from "react-awesome-reveal";
 import MyPhoto3 from '../../assets/MyPhoto3.png'
 import {Link as ScrollLink, animateScroll as scroll} from 'react-scroll'
 
@@ -10,17 +10,20 @@ const About = () => {
   
 
   return (
-   <>
+   
     <div id='about' className=' w-full  font-[LexendZetta]  px-4 m-auto pt-5 md:pt-2'>
         <div className='grid md:grid-cols-2 max-w-[1000px]  items-center justify-center  mx-auto '>
 
          <div className='mx-auto text-white'>
-        <Slide direction='left'> 
+        <Fade cascade damping={0.5} duration={500}> 
          <img src={MyPhoto3} alt="photo of Godsent" className='w-[400px] ' loading='lazy'/>
-         </Slide>
+         </Fade>
          </div>
          <div className='  pb-[100px] font-mono'>
-        <Slide direction='right'>
+
+
+
+        <Fade cascade damping={0.1}  fraction={0.5}>
        
          <h1 className='text-[40px] sm:text-center md:text-[50px]  font-bold text-center md:text-start text-neutral-500 font-[LexendZetta]' id='text-title'>AboutMe</h1>
        
@@ -39,14 +42,14 @@ const About = () => {
             </div>
             
         
-            </Slide>
+            </Fade>
          </div>
          
         </div>
         
 
     </div>
-    </>
+    
   )
 }
 
